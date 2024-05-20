@@ -1,9 +1,9 @@
-require('dotenv').config();
+
 const express=require('express');
 const cors=require('cors');
 const app=express();
-const router=require('./MDMART/router/router');
-const Db=require('./MDMART/lib/lib');
+const router=require('./src/MDMART/router/router');
+const Db=require('./src/MDMART/lib/lib');
 Db();
 app.use(cors());
 app.use(router);
