@@ -25,8 +25,8 @@ router.post('/api/stripe', async (req, res) => {
             payment_method_types: ['card'],
             line_items: lineItems,
             mode: 'payment',
-            success_url: 'https://magenta-gnome-4a009c.netlify.app/success',
-            cancel_url: 'https://magenta-gnome-4a009c.netlify.app/cancel',
+            success_url: 'https://kritik-munda-12.netlify.app/success',
+            cancel_url: 'https://kritik-munda-12.netlify.app/cancel',
         });
         res.send({ id: session.id });
     } catch (error) {
